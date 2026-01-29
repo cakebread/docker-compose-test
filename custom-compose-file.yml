@@ -13,6 +13,12 @@ services:
       - 3000:3000
     networks:
       - my_network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cakebreadtvv.rule=Host(`admin.cakebreadtv.com`)"
+      - "traefik.http.routers.cakebreadtvv.entrypoints=websecure"
+      - "traefik.http.routers.cakebreadtvv.tls.certResolver=cloudflare"
+      - "traefik.http.services.cakebreadtvv.loadbalancer.server.port=3000"
 networks:
   my_network:
     external: true
