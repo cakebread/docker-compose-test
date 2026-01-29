@@ -1,5 +1,7 @@
 # With Docker Compose
 
+Ok then.
+
 This example contains everything needed to get a Next.js development and production environment up and running with Docker Compose.
 
 ## Benefits of Docker Compose
