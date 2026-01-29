@@ -15,7 +15,7 @@ services:
       - dokploy-network
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.<cakebreadtvvv3>.rule=Host(`your-domain.com`)"
+      - "traefik.http.routers.<cakebreadtvvv3>.rule=Host(`test.cakebreadtv.com`)"
       - "traefik.http.routers.<cakebreadtvvv3>.entrypoints=websecure"
       - "traefik.http.routers.<cakebreadtvvv3>.tls.certResolver=letsencrypt"
       - "traefik.http.services.<cakebreadtvvv3>.loadbalancer.server.port=3000"
